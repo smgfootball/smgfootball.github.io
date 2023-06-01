@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>9 V/G/D - 10 B | Football SMG</title>
+    <base href="../..">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/matchImage.css">
+    <link rel="stylesheet" href="styles/match.css">
+    <link rel="stylesheet" href="styles/table.css">
+
+    <script src="js/util.js"></script>
+    <script src="js/baseUrlBypassHash.js" defer></script>
+    
+    <style>
+        :root {
+            --team-A-color: rgb(001, 139, 061);
+            --team-B-color: rgb(139, 7, 0);
+        }
+    </style>
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Accueil</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Matchs</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Équipes</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Joueurs</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Contactez-nous</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>À Propos</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Salle de Discussion</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="fr">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="document-title title">9 V/G/D - 10 B - 21.05.2023г.</h1>
+        <div class="columns">
+            <div>
+                <div class="panel">
+                    <div class="match-image">
+                        <img src="images/teams/team1.jpg">
+                        <img src="images/teams/team2.jpg">
+                    </div>
+                    <h3 class="title center"><a href="teams/team1.html" class="no-a-style">9 V/G/D</a></h3>
+                    <h3 class="title center"><a href="teams/team2.html" class="no-a-style">10 B</a></h3>
+                    <p style="width: max-content">
+                        21.05.2023г. 13:00 <br>
+                        Stade "SMG Arena", Sofia
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="mininav">
+                    <h3 class="title"><a href="#chrono" class="hashLink">Temps forts</a></h3>
+                    <h3 class="title"><a href="#lineups" class="hashLink">Composition</a></h3>
+                    <h3 class="title"><a href="#stats" class="hashLink">Statistiques</a></h3>
+                </div>
+
+                <div class="match-section" id="chrono">
+                    <h2 class="title match-section-title">Temps forts</h2>
+                    <div class="chrono-entry" data-type="goal" data-team="A">
+                        <div class="event-header">
+                            <h3 class="title">BUUUT!!!</h3>
+                            <p>8'</p>
+                        </div>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player1.html">Georgi Ivanov</a></h4>
+                                <p>9 V/G/D - #8</p>
+                            </div>
+                            <img src="images/players/player1.jpg" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="chrono-entry" data-type="goal" data-team="B">
+                        <div class="event-header">
+                            <h3 class="title">BUUUT!!!</h3>
+                            <p>43'</p>
+                        </div>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player2.html">Ivan Georgiev</a></h4>
+                                <p>10 B - #9</p>
+                            </div>
+                            <img src="images/players/player2.jpg" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="chrono-entry" data-type="card" data-team="A">
+                        <div class="event-header">
+                            <h3 class="title">🟨 Carton Jaune</h3>
+                            <span>45'</span>
+                        </div>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player6.html">Adrian Mitkov</a></h4>
+                                <p>9 V/G/D - #6</p>
+                            </div>
+                            <img src="images/players/player6.jpg" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="chrono-entry" data-type="change" data-team="A">
+                        <div class="event-header">
+                            <h3 class="title">⇅ Remplacement</h3>
+                            <span>46'</span>
+                        </div>
+                        <p>Entrée:</p>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player7.html">Tonislav Stoychev</a></h4>
+                                <p>9 V/G/D - #16</p>
+                            </div>
+                            <img src="images/players/player7.jpg" class="player-photo">
+                        </div>
+                        <p>Sortie:</p>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player6.html">Adrian Mitkov</a></h4>
+                                <p>9 V/G/D - #6</p>
+                            </div>
+                            <img src="images/players/player6.jpg" class="player-photo">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="match-section" id="lineups">
+                    <h2 class="title match-section-title">Composition</h2>
+                    <div class="lineup" data-team="A">
+                        <h3 class="title">9 V/G/D</h3>
+                        <p>(2-2-1)</p>
+                        <table rules="rows">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Postes</th>
+                                    <th>№</th>
+                                    <th>Joueur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Gardien</td>
+                                    <td>1</td>
+                                    <td><a href="players/player8.html">Petar Rushiev</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Défenseur</td>
+                                    <td>gauche</td>
+                                    <td>3</td>
+                                    <td><a href="players/player9.html">Sabi Lukanov</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Défenseur</td>
+                                    <td>droit</td>
+                                    <td>4</td>
+                                    <td><a href="players/player10.html">Pencho Popov</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Milieu de terrain</td>
+                                    <td>gauche</td>
+                                    <td>6</td>
+                                    <td><a href="players/player6.html">Adrian Mitkov</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Milieu de terrain</td>
+                                    <td>droit</td>
+                                    <td>8</td>
+                                    <td><a href="players/player1.html">Georgi Ivanov</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Attaquant</td>
+                                    <td>9</td>
+                                    <td><a href="players/player11.html">Vesselin Kirkov</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="lineup" data-team="B">
+                        <h3 class="title">10 B</h3>
+                        <p>(2-2-1)</p>
+                        <table rules="rows">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Poste</th>
+                                    <th>№</th>
+                                    <th>Joueur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Gardien</td>
+                                    <td>1</td>
+                                    <td><a href="players/player12.html">Bozhidar Vatov</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Défenseur</td>
+                                    <td>gauche</td>
+                                    <td>3</td>
+                                    <td><a href="players/player13.html">Denis Stoychev</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Défenseur</td>
+                                    <td>droit</td>
+                                    <td>4</td>
+                                    <td><a href="players/player14.html">Ivaylo Zhelev</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Milieu de terrain</td>
+                                    <td>gauche</td>
+                                    <td>6</td>
+                                    <td><a href="players/player15.html">Kaloyan Petkov</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Milieu de terrain</td>
+                                    <td>droit</td>
+                                    <td>8</td>
+                                    <td><a href="players/player16.html">Kristian Bogdanchiev</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Attaquant</td>
+                                    <td>9</td>
+                                    <td><a href="players/player2.html">Ivan Georgiev</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="match-section" id="stats">
+                    <h2 class="title match-section-title">Statistiques</h2>
+                    <table rules="rows">
+                        <thead>
+                            <tr>
+                                <th>Statistique</th>
+                                <th class="stats-th" data-team="A">9 V/G/D</th>
+                                <th class="stats-th" data-team="B">10 B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tirs</td>
+                                <td>5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Tirs cadrés</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Possession</td>
+                                <td>54%</td>
+                                <td>46%</td>
+                            </tr>
+                            <tr>
+                                <td>Passes</td>
+                                <td>365</td>
+                                <td>310</td>
+                            </tr>
+                            <tr>
+                                <td>Précision des Passes</td>
+                                <td>82%</td>
+                                <td>76%</td>
+                            </tr>
+                            <tr>
+                                <td>Fautes</td>
+                                <td>5</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Cartons jaunes</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Cartons rouges</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Corners</td>
+                                <td>6</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

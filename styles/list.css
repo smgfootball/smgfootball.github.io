@@ -1,0 +1,23 @@
+div.list div.item {
+    width: fit-content;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+div.list div.item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+div.filter {
+    text-align: center;
+}
+
+div.list div.noItem {
+    display: none;
+    text-align: center;
+    color: var(--filter-noresults-col);
+}

@@ -1,0 +1,36 @@
+div.news {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 30px;
+}
+
+div.news::-webkit-scrollbar {
+    background: var(--highlight-color-1);
+    border-radius: 20px;
+}
+
+div.news::-webkit-scrollbar-thumb {
+    background: var(--highlight-color-3);
+    border-radius: 20px;
+}
+
+div.novina {
+    width: min-content;
+}
+
+div.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h3.title,
+h4.title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+table {
+    display: inline-table;
+}

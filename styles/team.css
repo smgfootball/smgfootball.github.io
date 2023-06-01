@@ -1,0 +1,28 @@
+div.panel>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+div.panel {
+    text-align: center;
+    position: sticky;
+    top: 16px;
+}
+
+div.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.columns>div.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+div.list {
+    width: 100%;
+}

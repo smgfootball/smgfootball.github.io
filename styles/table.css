@@ -1,0 +1,22 @@
+table {
+    border: 2px solid var(--border-color);
+    max-width: 600px;
+}
+
+table th,
+table td {
+    border: 2px solid var(--border-color);
+    padding: 2px;
+}
+
+table th {
+    background-color: var(--highlight-color-2);
+}
+
+table td {
+    background-color: var(--highlight-color-1);
+}
+
+table tbody tr td {
+    text-align: center;
+}

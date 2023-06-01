@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>9 В/Г/Д - 10 Б | СМГ Футбол</title>
+    <base href="..">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/matchImage.css">
+    <link rel="stylesheet" href="styles/match.css">
+    <link rel="stylesheet" href="styles/table.css">
+
+    <script src="js/util.js"></script>
+    <script src="js/baseUrlBypassHash.js" defer></script>
+    
+    <style>
+        :root {
+            --team-A-color: rgb(001, 139, 061);
+            --team-B-color: rgb(139, 7, 0);
+        }
+    </style>
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Начало</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Мачове</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Отбори</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Играчи</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Контакти</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>За Нас</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Чат стая</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="bg">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="document-title title">9 В/Г/Д - 10 Б - 21.05.2023г.</h1>
+        <div class="columns">
+            <div>
+                <div class="panel">
+                    <div class="match-image">
+                        <img src="images/teams/team1.jpg">
+                        <img src="images/teams/team2.jpg">
+                    </div>
+                    <h3 class="title center"><a href="teams/team1.html" class="no-a-style">9 В/Г/Д</a></h3>
+                    <h3 class="title center"><a href="teams/team2.html" class="no-a-style">10 Б</a></h3>
+                    <p style="width: max-content">
+                        21.05.2023г. 13:00 <br>
+                        стадион "СМГ Арена", София
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="mininav">
+                    <h3 class="title"><a href="#chrono" class="hashLink">Хронология</a></h3>
+                    <h3 class="title"><a href="#lineups" class="hashLink">Състави</a></h3>
+                    <h3 class="title"><a href="#stats" class="hashLink">Статистики</a></h3>
+                </div>
+
+                <div class="match-section" id="chrono">
+                    <h2 class="title match-section-title">Хронология</h2>
+                    <div class="chrono-entry" data-type="goal" data-team="A">
+                        <div class="event-header">
+                            <h3 class="title">ГОООЛ!!!</h3>
+                            <p>8'</p>
+                        </div>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player1.html">Георги Иванов</a></h4>
+                                <p>9 В/Г/Д - #8</p>
+                            </div>
+                            <img src="images/players/player1.jpg" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="chrono-entry" data-type="goal" data-team="B">
+                        <div class="event-header">
+                            <h3 class="title">ГОООЛ!!!</h3>
+                            <p>43'</p>
+                        </div>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player2.html">Иван Георгиев</a></h4>
+                                <p>10 Б - #9</p>
+                            </div>
+                            <img src="images/players/player2.jpg" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="chrono-entry" data-type="card" data-team="A">
+                        <div class="event-header">
+                            <h3 class="title">🟨 Жълт картон</h3>
+                            <span>45'</span>
+                        </div>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player6.html">Адриан Митков</a></h4>
+                                <p>9 В/Г/Д - #6</p>
+                            </div>
+                            <img src="images/players/player6.jpg" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="chrono-entry" data-type="change" data-team="A">
+                        <div class="event-header">
+                            <h3 class="title">⇅ Смяна</h3>
+                            <span>46'</span>
+                        </div>
+                        <p>Влиза:</p>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player7.html">Тонислав Стойчев</a></h4>
+                                <p>9 В/Г/Д - #16</p>
+                            </div>
+                            <img src="images/players/player7.jpg" class="player-photo">
+                        </div>
+                        <p>Излиза:</p>
+                        <div class="player-part">
+                            <div class="player-info">
+                                <h4><a class="no-a-style" href="players/player6.html">Адриан Митков</a></h4>
+                                <p>9 В/Г/Д - #6</p>
+                            </div>
+                            <img src="images/players/player6.jpg" class="player-photo">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="match-section" id="lineups">
+                    <h2 class="title match-section-title">Състави</h2>
+                    <div class="lineup" data-team="A">
+                        <h3 class="title">9 В/Г/Д</h3>
+                        <p>(2-2-1)</p>
+                        <table rules="rows">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Позиция</th>
+                                    <th>№</th>
+                                    <th>Играч</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Вратар</td>
+                                    <td>1</td>
+                                    <td><a href="players/player8.html">Петър Рушиев</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Защитник</td>
+                                    <td>ляв</td>
+                                    <td>3</td>
+                                    <td><a href="players/player9.html">Съби Луканов</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Защитник</td>
+                                    <td>десен</td>
+                                    <td>4</td>
+                                    <td><a href="players/player10.html">Пенчо Попов</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Халф</td>
+                                    <td>ляв</td>
+                                    <td>6</td>
+                                    <td><a href="players/player6.html">Адриан Митков</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Халф</td>
+                                    <td>десен</td>
+                                    <td>8</td>
+                                    <td><a href="players/player1.html">Георги Иванов</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Нападател</td>
+                                    <td>9</td>
+                                    <td><a href="players/player11.html">Веселин Кирков</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="lineup" data-team="B">
+                        <h3 class="title">10 Б</h3>
+                        <p>(2-2-1)</p>
+                        <table rules="rows">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Позиция</th>
+                                    <th>№</th>
+                                    <th>Играч</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Вратар</td>
+                                    <td>1</td>
+                                    <td><a href="players/player12.html">Божидар Вътов</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Защитник</td>
+                                    <td>ляв</td>
+                                    <td>3</td>
+                                    <td><a href="players/player13.html">Денис Стойчев</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Защитник</td>
+                                    <td>десен</td>
+                                    <td>4</td>
+                                    <td><a href="players/player14.html">Ивайло Желев </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Халф</td>
+                                    <td>ляв</td>
+                                    <td>6</td>
+                                    <td><a href="players/player15.html">Калоян Петков</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Халф</td>
+                                    <td>десен</td>
+                                    <td>8</td>
+                                    <td><a href="players/player16.html">Кристиян Богданчиев</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Нападател</td>
+                                    <td>9</td>
+                                    <td><a href="players/player2.html">Иван Георгиев</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="match-section" id="stats">
+                    <h2 class="title match-section-title">Статистики</h2>
+                    <table rules="rows">
+                        <thead>
+                            <tr>
+                                <th>Статистика</th>
+                                <th class="stats-th" data-team="A">9 В/Г/Д</th>
+                                <th class="stats-th" data-team="B">10 Б</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Удари</td>
+                                <td>5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Удари в целта</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Владение на топката</td>
+                                <td>54%</td>
+                                <td>46%</td>
+                            </tr>
+                            <tr>
+                                <td>Подавания</td>
+                                <td>365</td>
+                                <td>310</td>
+                            </tr>
+                            <tr>
+                                <td>Точност на подаванията</td>
+                                <td>82%</td>
+                                <td>76%</td>
+                            </tr>
+                            <tr>
+                                <td>Нарушения</td>
+                                <td>5</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Жълти картони</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Червени картони</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Ъглови удари</td>
+                                <td>6</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

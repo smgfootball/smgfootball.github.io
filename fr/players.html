@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Joueurs | Football SMG</title>
+    <base href="..">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/list.css">
+
+    <script src="js/util.js"></script>
+    <script src="js/icons.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Accueil</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Matchs</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Équipes</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Joueurs</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Contactez-nous</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>À Propos</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Salle de Discussion</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="fr">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <h1 class="document-title title">Joueurs</h1>
+    <main>
+        <div class="filter">
+            <label for="prop1">Аnnée: </label>
+            <select class="filter-select" name="prop1" id="filter_prop1">
+                <option value="any">Toutes</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <label for="prop2">Évaluation : </label>
+            <select class="filter-select" name="prop2" id="filter_prop2">
+                <option value="any">Toutes</option>
+                <option value="60-69">60-69</option>
+                <option value="70-79">70-79</option>
+                <option value="80-89">80-89</option>
+                <option value="90+">90+</option>
+            </select>
+            <button onclick="filter();">Filtrer</button>
+            <button onclick="clearFilter();">Effacer les Filtres</button>
+        </div>
+        <br><br>
+        <div class="list">
+            <div class="noItem"> Votre recherche n'a pas donné de résultats. </div>
+            <div class="item" data-prop1="9" data-prop2="80-89">
+                <a class="no-a-style" href="players/player1.html">
+                    <img src="images/players/player1.jpg">
+                    <h3 class="title center">Georgi Ivanov</h3>
+                </a>
+                <a class="title" href="teams/team1.html">9 V/G/D</a>
+            </div>
+            <div class="item" data-prop1="10" data-prop2="90+">
+                <a class="no-a-style" href="players/player2.html">
+                    <img src="images/players/player2.jpg">
+                    <h3 class="title center">Ivan Georgiev</h3>
+                </a>
+                <a class="title" href="teams/team2.html">10 B</a>
+            </div>
+            <div class="item" data-prop1="7" data-prop2="70-79">
+                <a class="no-a-style" href="players/player3.html">
+                    <img src="images/players/player3.jpg">
+                    <h3 class="title center">Petar Ivanov</h3>
+                </a>
+                <a class="title" href="teams/team3.html">7e année</a>
+            </div>
+            <div class="item" data-prop1="6" data-prop2="70-79">
+                <a class="no-a-style" href="players/player4.html">
+                    <img src="images/players/player4.jpg">
+                    <h3 class="title center">Ioan Dimitrov</h3>
+                </a>
+                <a class="title" href="teams/team4.html">6 année United</a>
+            </div>
+            <div class="item" data-prop1="5" data-prop2="60-69">
+                <a class="no-a-style" href="players/player5.html">
+                    <img src="images/players/player5.jpg">
+                    <h3 class="title center">Martin Kanchev</h3>
+                </a>
+                <a class="title" href="teams/team5.html">5e année</a>
+            </div>
+            <div class="item" data-prop1="9" data-prop2="70-79">
+                <a class="no-a-style" href="players/player6.html">
+                    <img src="images/players/player6.jpg">
+                    <h3 class="title center">Adrian Mitkov</h3>
+                </a>
+                <a class="title" href="teams/team1.html">9 V/G/D</a>
+            </div>
+            <div class="item" data-prop1="9" data-prop2="80-89">
+                <a class="no-a-style" href="players/player7.html">
+                    <img src="images/players/player7.jpg">
+                    <h3 class="title center">Tonislav Stoychev</h3>
+                </a>
+                <a class="title" href="teams/team1.html">9 V/G/D</a>
+            </div>
+            <div class="item" data-prop1="9" data-prop2="60-69">
+                <a class="no-a-style" href="players/player8.html">
+                    <img src="images/players/player8.jpg">
+                    <h3 class="title center">Petar Rushiev</h3>
+                </a>
+                <a class="title" href="teams/team1.html">9 V/G/D</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

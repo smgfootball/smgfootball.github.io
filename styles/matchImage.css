@@ -1,0 +1,19 @@
+div.match-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+div.match-image img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div.match-image img:nth-child(2) {
+    clip-path: polygon(66% 0%, 100% 0%, 100% 100%, 33% 100%);
+}

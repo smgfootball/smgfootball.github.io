@@ -1,0 +1,19 @@
+div.aboutus-person {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+div.aboutus-person.reverse {
+    flex-direction: row-reverse;
+}
+
+div.aboutus-person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+div.aboutus-person p {
+    margin: 0px;
+}

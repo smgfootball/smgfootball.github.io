@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Matches | SMG Football</title>
+    <base href="..">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/matchImage.css">
+
+    <script src="js/util.js"></script>
+    <script src="js/icons.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Home</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Matches</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Teams</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Players</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Contacts</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>About Us</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Chat room</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="en">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <h1 class="document-title title">Matches</h1>
+    <main>
+        <div class="filter">
+            <label for="prop1">Season: </label>
+            <select class="filter-select" name="prop1" id="filter_prop1">
+                <option value="any">Any</option>
+                <option value="22-23">2022/2023</option>
+                <option value="21-22">2021/2022</option>
+                <option value="20-21">2020/2021</option>
+                <option value="19-20">2019/2020</option>
+            </select>
+            <label for="prop2">Type: </label>
+            <select class="filter-select" name="prop2" id="filter_prop2">
+                <option value="any">Any</option>
+                <option value="group">Group stage</option>
+                <option value="8th-f">Round of 16</option>
+                <option value="4th-f">Quarterfinal</option>
+                <option value="semi-f">Semi-final</option>
+                <option value="fin">Final</option>
+            </select>
+            <button onclick="filter();">Filter</button>
+            <button onclick="clearFilter();">Clear filters</button>
+        </div>
+        <br><br>
+        <div class="list">
+            <div class="noItem"> Nothing found. </div>
+            <div class="item" data-prop1="22-23" data-prop2="semi-f">
+                <a class="no-a-style" href="matches/match1.html">
+                    <div class="match-image">
+                        <img src="images/teams/team1.jpg">
+                        <img src="images/teams/team2.jpg">
+                    </div>
+                    <h3 class="title center">
+                        9 V/G/D - 10 B <br>
+                        21.05.2023
+                    </h3>
+                </a>
+            </div>
+            <div class="item" data-prop1="21-22" data-prop2="group">
+                <a class="no-a-style" href="matches/match2.html">
+                    <div class="match-image">
+                        <img src="images/teams/team5.jpg">
+                        <img src="images/teams/team4.jpg">
+                    </div>
+                    <h3 class="title center">
+                        5th Grade - 6th Grade United <br>
+                        18.11.2021
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

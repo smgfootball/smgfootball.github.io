@@ -1,0 +1,168 @@
+div.panel div.match-image {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+div.panel {
+    text-align: center;
+    position: sticky;
+    top: 16px;
+}
+
+div.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.columns>div.main {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    gap: 20px;
+    width: 100%;
+}
+
+div.mininav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--highlight-color-1);
+    border-radius: 500px;
+}
+
+div.match-section {
+    margin: 20px;
+    text-align: center;
+}
+
+div.match-section h3.match-section-title {
+    text-align: center;
+}
+
+/******************************
+        CHRONOLOGY
+******************************/
+
+div#chrono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+*[data-team="A"] {
+    --team-color: var(--team-A-color);
+}
+
+*[data-team="B"] {
+    --team-color: var(--team-B-color);
+}
+
+div#chrono div.chrono-entry {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    /* border: 1px solid var(--border-color); */
+    background-color: var(--highlight-color-1);
+}
+
+
+div#chrono div.chrono-entry div.player-part {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#chrono div.chrono-entry div.player-part * {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div.chrono-entry div.player-part div.player-info {
+    width: fit-content;
+    text-align: left;
+}
+
+div.chrono-entry div.player-part img.player-photo {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    border: 5px solid var(--team-color);
+}
+
+div#chrono div.chrono-entry[data-type="goal"] div.event-header {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: var(--team-color);
+}
+
+div#chrono div.chrono-entry:not([data-type="goal"]) div.event-header {
+    /* border-bottom: 1px solid var(--border-color); */
+    background-color: var(--highlight-color-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#chrono div.chrono-entry:not([data-type="goal"]) div.event-header>* {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div#chrono div.chrono-entry[data-type="change"]>p {
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+div#chrono div.chrono-entry[data-type="change"]>p:nth-of-type(1) {
+    color: var(--change-enter-color);
+}
+
+div#chrono div.chrono-entry[data-type="change"]>p:nth-of-type(2) {
+    color: var(--change-leave-color);
+}
+
+div#chrono div.chrono-entry[data-type="change"] div.player-part div.player-info h4 {
+    margin-top: 0px;
+}
+
+/******************************
+           LINEUPS
+******************************/
+
+div.lineup {
+    width: fit-content;
+    display: inline-block;
+    margin: 20px;
+}
+
+div.lineup h3,
+div.lineup p {
+    text-align: center;
+    margin: 0px;
+}
+
+div.lineup table thead tr {
+    background-color: var(--team-color);
+}
+
+/******************************
+          STATISTICS
+******************************/
+
+div#stats table {
+    display: inline-table;
+}
+
+th.stats-th {
+    background-color: var(--team-color);
+}

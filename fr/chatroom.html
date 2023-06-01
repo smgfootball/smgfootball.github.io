@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Salle de Discussion | Football SMG</title>
+    <base href="..">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/chatroom.css">
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Accueil</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Matchs</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Équipes</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Joueurs</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Contactez-nous</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>À Propos</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Salle de Discussion</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="fr">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <main>
+    <div id="tlkio" data-channel="footballInfo" data-theme="theme--night" style="width:100%; background-color: #1a1c1e; border-radius: 20px;"></div>
+        <script async src="http://tlk.io/embed.js" type="text/javascript"></script>
+    </main>
+</body>
+
+</html>

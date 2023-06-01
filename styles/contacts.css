@@ -1,0 +1,43 @@
+div.contactus-person {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+div.contactus-person.reverse {
+    flex-direction: row-reverse;
+}
+
+div.contactus-person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+div.contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div.contact {
+    width: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--highlight-color-1);
+    border-radius: 5%;
+}
+
+div.contact svg.icon {
+    height: 5em;
+}
+
+div.contact a {
+    font-weight: bold;
+}

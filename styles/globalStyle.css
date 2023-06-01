@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-weight: var(--text-font-weight);
+    background-color: var(--global-bkgcol);
+}
+
+nav {
+    display: flex;
+    margin: 20px 20px 20px 50px;
+}
+
+nav ul li a span {
+    color: var(--nav-link-color);
+}
+
+nav a:has(> img) {
+    display: contents;
+}
+
+nav ul {
+    /* border-top: 1px solid var(--border-color); */
+    /* border-bottom: 1px solid var(--border-color); */
+
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
+    margin: 0px 30px 0px 30px;
+    border-radius: 500px;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: block;
+    background-color: var(--highlight-color-2);
+    width: 100%;
+}
+
+nav ul li:hover {
+    background-color: var(--highlight-color-3);
+}
+
+nav ul li a {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+:not(nav) a:not(.no-a-style) {
+    color: var(--link-color);
+}
+
+:not(nav) a:not(.no-a-style):hover {
+    color: var(--link-hover-color);
+}
+
+a.no-a-style {
+    color: unset;
+}
+
+.document-title {
+    color: var(--document-title-color);
+    text-align: center;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-weight: var(--title-font-weight);
+}
+
+.center {
+    text-align: center;
+}
+
+main {
+    margin: 50px;
+}
+
+img.logo-img {
+    width: 64px;
+}
+
+div#langSelect {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    flex: none;
+    width: 64px;
+}
+
+div#langSelect img {
+    width: 64px;
+    height: 64px;
+    border-radius: 5%;
+    position: absolute;
+    cursor: pointer;
+}

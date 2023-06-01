@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Отбори | СМГ Футбол</title>
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/list.css">
+
+    <script src="js/util.js"></script>
+    <script src="js/icons.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Начало</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Мачове</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Отбори</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Играчи</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Контакти</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>За Нас</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Чат стая</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="bg">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <h1 class="document-title title">Отбори</h1>
+    <main>
+        <div class="filter">
+            <label for="prop1">Клас: </label>
+            <select class="filter-select" name="prop1" id="filter_prop1">
+                <option value="any">Всеки</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <label for="prop2">Рейтинг: </label>
+            <select class="filter-select" name="prop2" id="filter_prop2">
+                <option value="any">Всякакъв</option>
+                <option value="60-69">60-69</option>
+                <option value="70-79">70-79</option>
+                <option value="80-89">80-89</option>
+                <option value="90+">90+</option>
+            </select>
+            <button onclick="filter();">Филтриране</button>
+            <button onclick="clearFilter();">Изчистване на филтрите</button>
+        </div>
+        <br><br>
+        <div class="list">
+            <div class="noItem"> Търсенето ви не доведе до резултати. </div>
+            <div class="item" data-prop1="9" data-prop2="80-89">
+                <a class="no-a-style" href="teams/team1.html">
+                    <img src="images/teams/team1.jpg">
+                    <h3 class="title center">9 В/Г/Д</h3>
+                </a>
+            </div>
+            <div class="item" data-prop1="10" data-prop2="80-89">
+                <a class="no-a-style" href="teams/team2.html">
+                    <img src="images/teams/team2.jpg">
+                    <h3 class="title center">10 Б</h3>
+                </a>
+            </div>
+            <div class="item" data-prop1="7" data-prop2="70-79">
+                <a class="no-a-style" href="teams/team3.html">
+                    <img src="images/teams/team3.jpg">
+                    <h3 class="title center">7. клас</h3>
+                </a>
+            </div>
+            <div class="item" data-prop1="6" data-prop2="60-69">
+                <a class="no-a-style" href="teams/team4.html">
+                    <img src="images/teams/team4.jpg">
+                    <h3 class="title center">6 клас United</h3>
+                </a>
+            </div>
+            <div class="item" data-prop1="5" data-prop2="90+">
+                <a class="no-a-style" href="teams/team5.html">
+                    <img src="images/teams/team5.jpg">
+                    <h3 class="title center">5. клас</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

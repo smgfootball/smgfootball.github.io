@@ -1,0 +1,46 @@
+/* :root {
+    --link-color: blue;
+    --highlight-color-2: lightcoral;
+    --highlight-color-3: red;
+    --document-title-color: green;
+    --text-color: purple;
+    --global-bkgcol: antiquewhite;
+    
+    --highlight-color-1: burlywood;
+    --filter-noresults-col: brown;
+    --border-color: black;
+    --change-leave-color: red;
+    --change-enter-color: green;
+} */
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url("../fonts/uni-sans.heavy-caps.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url("../fonts/Jura-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+    --global-bkgcol: #1A759F;
+    --highlight-color-1: #168AAD;
+    --highlight-color-2: #34A0A4;
+    --highlight-color-3: #52B69A;
+    --border-color: #184E77;
+    --text-color: #99D98C;
+    --document-title-color: #76C893;
+    --link-color: #D9ED92;
+    --link-hover-color: white;
+    --filter-noresults-col: #B5E48C;
+    
+    --change-leave-color: red;
+    --change-enter-color: lime;
+}
+
+
+:root {
+    --title-font: 'Uni Sans', sans-serif;
+    --text-font: 'Jura', sans-serif;
+}

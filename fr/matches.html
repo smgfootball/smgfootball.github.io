@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Matchs | Football SMG</title>
+    <base href="..">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/globalStyle.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/matchImage.css">
+
+    <script src="js/util.js"></script>
+    <script src="js/icons.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <script src="js/langSelect.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo-img" alt="Лого на сайта"></a>
+        <ul>
+            <li><a class="no-a-style" href="index.html"><span>Accueil</span></a></li>
+            <li><a class="no-a-style" href="matches.html"><span>Matchs</span></a></li>
+            <li><a class="no-a-style" href="teams.html"><span>Équipes</span></a></li>
+            <li><a class="no-a-style" href="players.html"><span>Joueurs</span></a></li>
+            <li><a class="no-a-style" href="contacts.html"><span>Contactez-nous</span></a></li>
+            <li><a class="no-a-style" href="aboutus.html"><span>À Propos</span></a></li>
+            <li><a class="no-a-style" href="chatroom.html"><span>Salle de Discussion</span></a></li>
+        </ul>
+        <div id="langSelect" data-currLang="fr">
+            <img data-lang="bg" src="images/lang_flags/bg.jpg">
+            <img data-lang="en" src="images/lang_flags/en.jpg">
+            <img data-lang="fr" src="images/lang_flags/fr.jpg">
+        </div>
+    </nav>
+
+    <h1 class="document-title title">Matchs</h1>
+    <main>
+        <div class="filter">
+            <label for="prop1">Saison: </label>
+            <select class="filter-select" name="prop1" id="filter_prop1">
+                <option value="any">Toutes</option>
+                <option value="22-23">2022/2023</option>
+                <option value="21-22">2021/2022</option>
+                <option value="20-21">2020/2021</option>
+                <option value="19-20">2019/2020</option>
+            </select>
+            <label for="prop2">Type: </label>
+            <select class="filter-select" name="prop2" id="filter_prop2">
+                <option value="any">Tous</option>
+                <option value="group">Phase de groupes</option>
+                <option value="8th-f">Huitièmes de finale</option>
+                <option value="4th-f">Quart de finale</option>
+                <option value="semi-f">Demi-finale</option>
+                <option value="fin">Finale</option>
+            </select>
+            <button onclick="filter();">Filtrer</button>
+            <button onclick="clearFilter();">Effacer les Filtres</button>
+        </div>
+        <br><br>
+        <div class="list">
+            <div class="noItem"> Votre recherche n'a pas donné de résultats. </div>
+            <div class="item" data-prop1="22-23" data-prop2="semi-f">
+                <a class="no-a-style" href="matches/match1.html">
+                    <div class="match-image">
+                        <img src="images/teams/team1.jpg">
+                        <img src="images/teams/team2.jpg">
+                    </div>
+                    <h3 class="title center">
+                        9 V/G/D - 10 B <br>
+                        21.05.2023
+                    </h3>
+                </a>
+            </div>
+            <div class="item" data-prop1="21-22" data-prop2="group">
+                <a class="no-a-style" href="matches/match2.html">
+                    <div class="match-image">
+                        <img src="images/teams/team5.jpg">
+                        <img src="images/teams/team4.jpg">
+                    </div>
+                    <h3 class="title center">
+                        5e année - 6 année United <br>
+                        18.11.2021
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
